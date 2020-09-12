@@ -12,6 +12,15 @@ public class User {
     private Integer id;
     private String name;
     private String password;
+    private int status;
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
     public User(){}
 
