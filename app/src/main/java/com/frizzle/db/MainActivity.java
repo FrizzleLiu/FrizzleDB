@@ -13,6 +13,7 @@ import com.frizzle.db.db.OrderDao;
 import com.frizzle.db.db.UserDao;
 import com.frizzle.db.subdb.BaseDaoSubFactory;
 import com.frizzle.db.subdb.PhotoDao;
+import com.frizzle.db.update.UpdateManager;
 
 import java.util.Date;
 import java.util.List;
@@ -120,6 +121,12 @@ public class MainActivity extends AppCompatActivity {
                 photoDao.insert(photo);
             }
         });
-
+        findViewById(R.id.updateDb).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateManager updateManager = new UpdateManager();
+                updateManager.startUpdateDb(MainActivity.this);
+            }
+        });
     }
 }

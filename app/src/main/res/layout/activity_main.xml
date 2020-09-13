@@ -42,5 +42,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="分库插入" />
+    <Button
+        android:id="@+id/updateDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据库更新" />
 
 </LinearLayout>
